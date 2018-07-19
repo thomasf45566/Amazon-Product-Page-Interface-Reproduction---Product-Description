@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Div = styled.div`
   font-family: 'Lato';
+  text-transform: capitalize;
 `;
 
 const Title = styled.p`
@@ -34,7 +35,7 @@ const Description = ({ brand, name, stars, reviews, questions, price, color, siz
   <Div>
     <Para> {brand} </Para>
     <Title> {name} </Title>
-    <Stars>{renderStars(stars)} <Para> {reviews.toLocaleString()} customer reviews | {questions.toLocaleString()} anwsered questions </Para></Stars>
+    <Stars>{renderStars(stars)} &#x25BC; <Para> {reviews.toLocaleString()} customer reviews | {questions.toLocaleString()} anwsered questions </Para></Stars>
     <Para> Price: <Price>{'$' + price.toFixed(2)}</Price> </Para>
     <Para> <strong>Color: </strong> {color} </Para>
     <Para> <strong>Size: </strong>

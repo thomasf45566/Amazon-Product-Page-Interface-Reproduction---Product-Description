@@ -48,8 +48,9 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    axios.get('/api/description').then(data => {
-      this.setState(data.data[Math.floor(Math.random() * data.data.length)]);
+    let itemName = 'Coding Robot';
+    axios.get(`/api/description/${itemName}`).then(data => {
+      this.setState(data.data);
     });
   }
 

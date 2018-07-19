@@ -26,7 +26,7 @@ const Description = require('../databse');
 
 module.exports = {
   get: (req, res) => {
-    Description.find({}, (err, description) => {
+    Description.findOne({name: req.params.name}, (err, description) => {
       if (err) res.status(400).send(err);
       else res.status(200).send(description);
     })
