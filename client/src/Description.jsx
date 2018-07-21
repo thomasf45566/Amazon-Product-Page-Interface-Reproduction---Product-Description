@@ -49,10 +49,12 @@ const Box = styled.div`
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%;
+  height: 180px;
+  width: 250px;
 `;
 
 const BoxText = styled.p`
+  vertical-align: middle;
   text-align: center;
 `;
 
