@@ -8,7 +8,11 @@ db.once('open', () => console.log('mongo is connected'));
 const descriptionSchema = mongoose.Schema({
   brand: String,
   name: String,
-  stars: Number,
+  star1: Number,
+  star2: Number,
+  star3: Number,
+  star4: Number,
+  star5: Number,
   reviews: Number,
   questions: Number,
   price: Number,
