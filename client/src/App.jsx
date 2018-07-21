@@ -65,7 +65,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.fecthData('Coding Robot');
+    this.fecthData('ty');
   }
 
   fecthData(name) {
