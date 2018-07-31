@@ -99,10 +99,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Search
+        {/* <Search
           input={this.state.input}
           handleInput={this.handleInput}
-          handleSubmit={this.handleSubmit} />
+          handleSubmit={this.handleSubmit} /> */}
         <Description
           brand = {this.state.brand}
           name = {this.state.name}

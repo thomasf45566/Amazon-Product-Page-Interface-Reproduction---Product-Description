@@ -1,0 +1,10 @@
+language: node_js
+node_js: node
+services: 
+  - mongodb
+install: 
+  - npm i
+script:
+  - mongod
+  - npm run build
+  - npm start

@@ -12,4 +12,4 @@ server.use('/', express.static(path.join(__dirname, '../client/dist')));
 
 server.use('/api', router);
 
-server.listen(3000, () => console.log('server is listening on 3000'));
+server.listen(4000, () => console.log('server is listening on 4000'));
