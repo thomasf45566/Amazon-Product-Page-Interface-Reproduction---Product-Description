@@ -6,5 +6,6 @@ install:
   - npm i
 script:
   - mongod
+  - npm run setup
   - npm run build
   - npm start
