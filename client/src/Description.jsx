@@ -1,10 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import fonts from 'google-fonts';
+
+fonts.add({
+  'Lato': true,
+});
 
 const Div = styled.div`
   font-family: 'Lato';
   font-size: 13px;
   line-height: 1.2;
+  font-color: #111;
 `;
 
 const Title = styled.p`
