@@ -119,7 +119,7 @@ const Description = ({ brand, name, stars, star1, star2, star3, star4, star5, re
     ))}
     </select>
     <Para> <Strong>Weight:</Strong> {weight.toLocaleString()} lbs </Para>
-    <UL id="description">
+    <UL id="desc">
     {text.map(line => (
       <List>{line}</List>
     ))}

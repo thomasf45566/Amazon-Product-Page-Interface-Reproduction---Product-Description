@@ -11,7 +11,7 @@ for (let i = 0; i < 10000; i++) {
     color: faker.commerce.color(),
     size: faker.random.word(),
     weight: faker.random.number(1000),
-    text: faker.lorem.sentences(Math.floor(Math.random() * 15) + 4),
+    text: faker.lorem.sentences(Math.floor(Math.random() * 10) + 10),
   };
   const sizes = ['X-Small X-Large XX-Large', 'Small Medium Large', 'Medium Large XX-Large', 'X-Small Medium Large', 'XXX-Large XXXX-Large XXXXX-Large', 'XXXX-Small XXX-Small Small Large'];
   data.size = sizes[Math.floor(Math.random() * sizes.length)];

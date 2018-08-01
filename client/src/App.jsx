@@ -87,22 +87,22 @@ class App extends React.Component {
 
   showMore() {
     this.setState({showFull: true});
-    document.getElementById('description').style.height = 'auto';
+    document.getElementById('desc').style.height = 'auto';
   }
   
   showLess() {
     this.setState({showFull: false});
-    document.getElementById('description').style.height = '105px';
+    document.getElementById('desc').style.height = '105px';
   }
   
 
   render() {
     return (
       <div>
-        {/* <Search
+        <Search
           input={this.state.input}
           handleInput={this.handleInput}
-          handleSubmit={this.handleSubmit} /> */}
+          handleSubmit={this.handleSubmit} />
         <Description
           brand = {this.state.brand}
           name = {this.state.name}
