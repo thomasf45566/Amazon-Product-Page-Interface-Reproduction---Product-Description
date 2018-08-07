@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import fonts from 'google-fonts';
 
 fonts.add({
@@ -64,17 +64,35 @@ const BoxText = styled.p`
   text-align: center;
 `;
 
-const Bar = styled.dd`
-  margin: 2px;
-  margin-left: 10px;
-  line-height: 1;
-  height: 15px;
+const barGrow = keyframes`
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+`;
+
+const Bar = styled.div`
+  margin: 0.3px;
+  margin-bottom: 0.7px;
+  margin-top: 0.5px;
+  height: 15.8px;
+  width: 100%;
+  animation: ${barGrow} 1s;
   vertical-align: middle;
   background-color: #ffcc00;
 `;
 
 const Row = styled.div`
-  width: 70%;
+  margin: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 1;
+  height: 17px;
+  width: 60%;
+  background-color: #f2f2f2;
+  border: 0.3px solid grey;
 `;
 
 const Strong = styled.strong`
@@ -102,11 +120,11 @@ const Description = ({ brand, name, stars, star1, star2, star3, star4, star5, re
     <Box id="box" onMouseOver={mouseOver} onMouseOut={mouseOut}>
       <BoxText> {stars.toFixed(1)} out of 5 stars </BoxText>
       <dt>
-        <OneLine><Link href="#"> 5 star </Link><Row><Bar style={{width: `${Math.floor(star5 / reviews * 100)}%`}}></Bar></Row>{Math.floor(star5 / reviews * 100)}%</OneLine>
-        <OneLine><Link href="#"> 4 star </Link><Row><Bar style={{width: `${Math.floor(star4 / reviews * 100)}%`}}></Bar></Row>{Math.floor(star4 / reviews * 100)}%</OneLine>
-        <OneLine><Link href="#"> 3 star </Link><Row><Bar style={{width: `${Math.floor(star3 / reviews * 100)}%`}}></Bar></Row>{Math.floor(star3 / reviews * 100)}%</OneLine>
-        <OneLine><Link href="#"> 2 star </Link><Row><Bar style={{width: `${Math.floor(star2 / reviews * 100)}%`}}></Bar></Row>{Math.floor(star2 / reviews * 100)}%</OneLine>
-        <OneLine><Link href="#"> 1 star </Link><Row><Bar style={{width: `${Math.floor(star1 / reviews * 100)}%`}}></Bar></Row>{Math.floor(star1 / reviews * 100)}%</OneLine>
+        <OneLine><Link href="#"> 5 star </Link><Row><div style={{width: `${Math.floor(star5 / reviews * 100)}%`}}><Bar></Bar></div></Row>{Math.floor(star5 / reviews * 100)}%</OneLine>
+        <OneLine><Link href="#"> 4 star </Link><Row><div style={{width: `${Math.floor(star4 / reviews * 100)}%`}}><Bar></Bar></div></Row>{Math.floor(star4 / reviews * 100)}%</OneLine>
+        <OneLine><Link href="#"> 3 star </Link><Row><div style={{width: `${Math.floor(star3 / reviews * 100)}%`}}><Bar></Bar></div></Row>{Math.floor(star3 / reviews * 100)}%</OneLine>
+        <OneLine><Link href="#"> 2 star </Link><Row><div style={{width: `${Math.floor(star2 / reviews * 100)}%`}}><Bar></Bar></div></Row>{Math.floor(star2 / reviews * 100)}%</OneLine>
+        <OneLine><Link href="#"> 1 star </Link><Row><div style={{width: `${Math.floor(star1 / reviews * 100)}%`}}><Bar></Bar></div></Row>{Math.floor(star1 / reviews * 100)}%</OneLine>
       </dt>
       <Link href="#"><BoxText> see all {reviews.toLocaleString()} reviews &#x25B8;</BoxText></Link>
     </Box>
