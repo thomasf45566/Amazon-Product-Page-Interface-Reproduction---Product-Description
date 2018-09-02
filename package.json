@@ -1,7 +1,7 @@
 {
-  "name": "fec",
+  "name": "amazon-product-description",
   "version": "1.0.0",
-  "description": "",
+  "description": "interface reproduction",
   "main": "webpack.config.js",
   "scripts": {
     "setup": "node ./database/seed.js",
