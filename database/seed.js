@@ -20,7 +20,6 @@ for (let i = 0; i < 10000; i++) {
   data.star3 = Math.floor(Math.random() * (data.reviews - data.star1 - data.star2 + 1));
   data.star4 = Math.floor(Math.random() * (data.reviews - data.star1 - data.star2 - data.star3 + 1));
   data.star5 = data.reviews - data.star1 - data.star2 - data.star3 - data.star4;
-  // console.log(data);
   new Description(data).save((err, posted) => {
     if (err) console.log(err);
   });

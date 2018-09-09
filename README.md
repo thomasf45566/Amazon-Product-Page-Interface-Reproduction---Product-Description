@@ -1,11 +1,12 @@
 # FEC-Thomas-W.
 A UI reproduction of the product description section on Amazon Product Page.
+![Demo](http://g.recordit.co/guicBLqGVT.gif)
 
-To Compile React Code
-- npm run build
+# Compile React Code
+> npm run build
 
-To Seed Randomly Generated Data
-- npm run setup
+# Seed Randomly Generated Data
+> npm run setup
 
-To Start the Server
-- npm start
+# Start the Server
+> npm start
