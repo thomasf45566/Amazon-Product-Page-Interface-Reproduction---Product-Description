@@ -1,4 +1,4 @@
-# FEC-Thomas-W.
+# Amazon-Product-Page-Interface-Reproduction---Product-Description
 A UI reproduction of the product description section on Amazon Product Page.
 ![Demo](http://g.recordit.co/guicBLqGVT.gif)
 
