@@ -1,4 +1,4 @@
-import { ADD_ARTICLE, CHANGE_ITEM } from "../constants/action-types";
+import { CHANGE_ITEM } from "../constants/action-types";
 const initialState = {
   brand: 'Apple',
   name: 'Awesome Brand New Apple Iphone X, , GSM Unlocked 5.8", 256 GB - Space Gray',
